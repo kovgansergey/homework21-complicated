@@ -14,7 +14,10 @@ $(document).ready(function() {
 	    	minlength: jQuery.validator.format("Минимальная длинна 2 символа"),
 	    },
 	    phone: "Заполните поле",
-	  }
+	  },
+
+	  errorClass: "invalid",
+	  errorElement: "div",
 	});
 	
 	$("#brifForm").validate({
@@ -42,6 +45,8 @@ $(document).ready(function() {
 	      email: "Введите корректный email",
 	    },
 	  },
+	  errorClass: "invalid",
+	  errorElement: "div",
 	});
 
 	$(".inputphone").mask("8 (999) 999-99-99");
