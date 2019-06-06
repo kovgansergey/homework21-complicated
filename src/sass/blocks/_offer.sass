@@ -25,12 +25,18 @@
 		margin-bottom: 30px
 		max-width: 235px
 		font-size: 16px
+	&-form
+		&__wrap
+			display: flex
+			justify-content: space-between
+		&__input
+			display: flex
+			flex-direction: column
+			align-items: center
 	&__input
-		margin-bottom: 25px
 		width: 240px
-		&:first-child
-			margin-right: 10px
 	&__button
+		margin-top: 25px
 		padding: 26px 0
 		width: 100%
 		font-size: 16px
@@ -53,8 +59,9 @@
 	.offer
 		background-size: cover
 		&__input
-			margin-bottom: 10px
 			width: 100%
+		&__button
+			margin-top: 10px
 @media (max-width: 767px)
 	.offer
 		background: #ffffff
