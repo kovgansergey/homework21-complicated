@@ -1,0 +1,78 @@
+.price
+	padding: 98px 0
+	&__title
+		margin-bottom: 48px
+		max-width: 515px
+	&__subtitle
+		margin-bottom: 59px
+	&-wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&-card
+		margin-bottom: 30px
+		padding-bottom: 43px
+		text-align: center
+		border: 1px solid $price-border-color
+		&:hover
+			box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1)
+			.price-card__img::before
+				opacity: 0.8
+		&__img
+			position: relative
+			& img
+				display: block
+			&::before
+				content: ''
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				background-image: linear-gradient(to top, $main-color 0%, rgba(255, 255, 255, 0) 100%)
+				opacity: 0
+				transition: 0.2s
+		&__title
+			margin-top: 36px
+			margin-bottom: 31px
+			color: #000000
+			font-size: 18px
+			font-weight: 400
+		&__link
+			display: inline-block
+			+bold
+			text-decoration: none
+			color: $text-color
+			font-size: 16px
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				bottom: -4px
+				left: 0
+				z-index: -1
+				display: block
+				width: 100%
+				height: 3px
+				background-color: $main-color
+				transition: 0.1s
+			&:hover
+				&::after
+					height: 13px
+@media (max-width: 1199px)
+	.price
+		&-wrap
+			justify-content: space-around
+@media (max-width: 566px)
+	.price
+		padding: 45px 0
+		&__title
+			margin-bottom: 20px
+		&-card
+			padding-bottom: 31px
+			&__img img
+				max-width: 271px
+			&__title
+				font-size: 14px
+				margin-top: 30px
+				margin-bottom: 13px

@@ -1,0 +1,125 @@
+.brif
+	padding-top: 75px
+	padding-bottom: 77px
+	background-image: url(../img/brif/brif-bgl.jpg), url(../img/brif/brif-bgr.jpg)
+	background-repeat: repeat-y, no-repeat
+	background-position: left center, right center
+	background-size: 50%, cover
+	&-wrap
+		display: flex
+		justify-content: space-between
+	&-text
+		max-width: 520px
+		color: #000000
+		&__title
+			margin-bottom: 45px
+			+bold
+			font-size: 22px
+			line-height: 33px
+		&__subtitle
+			margin-bottom: 94px
+			font-size: 16px
+		&__list
+			margin: 0
+			padding: 0
+			list-style: none
+		&__item
+			display: flex
+			align-items: center
+			margin-bottom: 28px
+			&:last-child
+				margin-bottom: 0
+	&-request
+		max-width: 370px
+		text-align: center
+		&__title
+			margin-bottom: 46px
+			+bold
+			font-size: 22px
+			line-height: 33px
+		&__subtitle
+			margin-bottom: 46px
+			font-size: 16px
+		&__text
+			font-size: 15px
+	&__input
+		width: 100%
+		margin-bottom: 11px
+	&__button
+		margin-top: 18px
+		margin-bottom: 14px
+		width: 100%
+		height: 70px
+		font-size: 16px
+.item
+	&__number, &__description
+		display: inline-block
+		margin: 0
+		+bold
+	&__number
+		margin-right: 30px
+		padding: 8px 10px
+		border: 2px solid #000000
+		border-radius: 50%
+		font-size: 14px
+	&__description
+		font-size: 18px
+@media (max-width: 1199px)
+	.brif
+		&-text
+			max-width: 380px
+@media (max-width: 767px)
+	.brif
+		padding-top: 60px
+		background-repeat: repeat-x, no-repeat
+		background-position: top center, bottom center
+		background-size: 920px, cover
+		&-wrap
+			justify-content: space-around
+			flex-wrap: wrap
+		&-request
+			&__title
+				margin-top: 60px
+@media (max-width: 566px)
+	.brif
+		padding-top: 25px
+		padding-bottom: 15px
+		background-size: 740px, cover
+		&-text
+			&__title
+				margin-bottom: 15px
+				width: 220px
+				font-size: 18px
+				line-height: 1.2
+			&__subtitle
+				margin-bottom: 37px
+				width: 175px
+				font-size: 14px
+			&__item
+				margin-bottom: 25px
+		&-request
+			&__title
+				margin-top: 120px
+				margin-bottom: 23px
+				font-size: 18px
+				line-height: 25.35px
+			&__subtitle
+				margin-bottom: 35px
+				font-size: 14px
+			&__text
+				display: inline-block
+				width: 135px
+				font-size: 14px
+				line-height: 24px
+		&__input
+			margin-bottom: 9px
+			padding: 23px
+		&__button
+			margin-top: 0px
+			margin-bottom: 12px
+			font-size: 14px
+	.item
+		&__number
+			margin-right: 8px
+		&__description
+			font-size: 14px

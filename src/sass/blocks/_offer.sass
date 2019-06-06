@@ -1,0 +1,84 @@
+.offer
+	padding-top: 50px
+	padding-bottom: 90px
+	background: url("../img/offer/offer-bg.jpg") no-repeat
+	background-position: center right
+	background-size: contain
+	position: relative
+	&:before
+		content: ''
+		width: 50%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		background-color: #ffffff
+	&-card
+		width: 43%
+		position: relative
+	&__title
+		max-width: 350px
+		+bold
+		font-size: 24px
+		line-height: 35px
+	&__subtitle
+		margin-bottom: 30px
+		max-width: 235px
+		font-size: 16px
+	&__input
+		margin-bottom: 25px
+		width: 240px
+		&:first-child
+			margin-right: 10px
+	&__button
+		padding: 26px 0
+		width: 100%
+		font-size: 16px
+	&-connection
+		display: flex
+		justify-content: space-between
+		margin-top: 30px
+		&__manager
+			width: 225px
+		&__myself
+			width: 195px
+		&__text
+			margin: 0
+			font-size: 15px
+			line-height: 24px
+	&__phone
+		margin-top: 5px
+		font-size: 15px
+@media (max-width: 1199px)
+	.offer
+		background-size: cover
+		&__input
+			margin-bottom: 10px
+			width: 100%
+@media (max-width: 767px)
+	.offer
+		background: #ffffff
+		&-card
+			width: 100%
+@media (max-width: 566px)
+	.offer
+		padding-top: 38px
+		padding-bottom: 50px
+		&__title
+			margin-bottom: 20px
+			width: 260px
+			font-size: 18px
+			line-height: 1.2
+		&__subtitle
+			font-size: 14px
+		&__input
+			padding: 22px
+		&__button
+			padding: 15px 60px
+			min-width: 160px
+			font-size: 14px
+			line-height: 18px
+		&-connection
+			margin-top: 25px
+			flex-direction: column
+			
