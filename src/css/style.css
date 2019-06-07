@@ -316,6 +316,7 @@ body {
 .offer-form__wrap {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .offer-form__input {
@@ -364,7 +365,11 @@ body {
   .offer {
     background-size: cover;
   }
+  .offer-form__input {
+    width: 100%;
+  }
   .offer__input {
+    margin-top: 10px;
     width: 100%;
   }
   .offer__button {
